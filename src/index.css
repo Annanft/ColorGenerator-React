@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(247,247,247);
+  color: rgb(60, 60, 60);
+}
+
+/* контейнер для формы и заголовка */
+.container{
+  padding: 2rem;
+  display: grid;
+  row-gap: 1.5rem;
+  height: 160px;
+}
+.container h4{
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+}
+
+
+/* форма с инпутами и кнопкой */
+.color-form{
+  display: flex;
+}
+
+
+/* два инпута - для выбора цвета и ввода текста */
+input[type='text']{
+border-color: transparent;
+padding: 0.5rem 1rem;
+font-size: 1.25rem;
+width: 180px;
+}
+input[type='color']{
+  height: 100%;
+  background-color: #fff;
+  border-color: #fff;
+  
+}
+
+/* копка субмит */
+.container .btn {
+  border-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  letter-spacing: 3px;
+  background-color: #44b93a;
+  border: transparent;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  transition-duration: 0s;
+  cursor: pointer;
+}
+
+/* медиа для экрана больше 768px */
+@media(min-width:768px){
+  .container{
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    align-items: center;
+  }
+
+  .color-form{
+    height: 40px;
+  }
+}
+
+/* контейнер с всеми цветами */
+.colors{
+  min-height: calc(100vh - 160px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(223.33px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(96px, 1fr));
+}
+
+/* сам квадрат с цветом */
+.color{
+  padding: 1rem 2rem; 
+}
+.color p{
+  cursor: pointer;
+}
+.white-color{
+  color: rgb(179, 176, 176);
+}
+
+
+
