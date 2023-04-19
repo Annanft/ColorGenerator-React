@@ -21,7 +21,7 @@ const SingleColor = ({ el, idx }) => {
 
   return (
     <article className='color' style={{ background: `#${hex}` }} onClick={handleCopy}>
-      <p className={idx >10 ? 'white-color':undefined}  >#{hex}</p>
+      <p className={idx >12 ? 'white-color':undefined}  >#{hex}</p>
       
     </article>
   );

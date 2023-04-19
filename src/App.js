@@ -6,11 +6,11 @@ import Form from './components/Form';
 import { ToastContainer, toast } from 'react-toastify';
 
 function App() {
-  const[colors,setColors] = useState(new Values('#FF6000').all(10))
+  const[colors,setColors] = useState(new Values('#FF6000').all(8))
 
   const addColor = (y)=>{
     try {
-      const ww = new Values(y).all(10)
+      const ww = new Values(y).all(8)
       setColors(ww)
     } catch (error) {
       toast.error(error.message)

@@ -86,9 +86,10 @@ input[type='color']{
 }
 .color p{
   cursor: pointer;
+  font-size: 1.5rem;
 }
 .white-color{
-  color: rgb(179, 176, 176);
+  color: rgb(231, 223, 223);
 }
 
 
